@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar {
+    width: 350px;
+    height: 240px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 44px;
+    margin-bottom: 16px;
+}
+
+.dateTitle {
+    display: flex;
+    height: 44px;
+    width: 262px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.monthSelect {
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    background-color: white;
+    border: none;
+}
+
+.monthSelect:hover {
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 0%;
+}
+
+.total_date {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.empty {
+    display: flex;
+    pointer-events: none;
+    color: black;
+    background-color: #757575;
+    width: 50px;
+    height: 36px;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.date:hover {
+    background-color: #e6e6e6;
+}
+
+.today {
+    background-color: #ffff76;
+}
+.active {
+    background-color:  #006edc ;
+}
