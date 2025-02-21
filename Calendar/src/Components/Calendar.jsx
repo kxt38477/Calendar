@@ -70,7 +70,7 @@ const Calendar = () => {
         return startDate && endDate && day >= startDate && day <= endDate;
     }
 
-    
+
     return (
         <div className='calendar'>
             <div className='header'>
@@ -95,7 +95,7 @@ const Calendar = () => {
                 }
                 {
                     monthTotalDate.map((day, index) => (
-                        <div key={day} className={`date${day.getDate() === new Date().getDate() && day.getMonth() === new Date().getMonth() ? ' today' : ''}
+                        <div key={day} className={`date${day.getFullYear() === new Date().getFullYear() && day.getDate() === new Date().getDate() && day.getMonth() === new Date().getMonth() ? ' today' : ''}
                         ${startDate && day.toDateString() === startDate.toDateString() ? ' active' : ''}
                         ${endDate && day.toDateString() === endDate.toDateString() ? ' active' : ''}
                         ${inSelectRange(day) ? ' active' : ''}`}
